@@ -1,0 +1,424 @@
+@import url('../node_modules/@fortawesome/fontawesome-free/css/all.css');
+
+@font-face {
+    font-family: 'Courgette';
+    src: url('./fonts/courgette-v13-latin-regular.woff') format('woff');
+    font-style: normal;
+    
+  }
+
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/roboto/roboto-v30-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('./fonts/roboto/roboto-v30-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/roboto/roboto-v30-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/roboto/roboto-v30-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/roboto/roboto-v30-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/roboto/roboto-v30-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+  }
+
+  /* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/monts/montserrat-v24-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('./fonts/monts/montserrat-v24-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/monts/montserrat-v24-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/monts/montserrat-v24-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/monts/montserrat-v24-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/monts/montserrat-v24-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+  }
+
+h1{
+    color: #485b70;
+    font-size: 50px;
+    font-weight: 100;
+    font-family: "Montserrat";
+    font-weight: 100;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;   
+    
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./img/woodBG.jpg");
+    /* background-color: rgb(22, 22, 22); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Roboto";
+    /* overflow-y: hidden; */
+    overflow-x: hidden;
+    position: relative;
+    background-size: 70%;
+}
+
+
+
+.mexicoPic{
+    height: 24.5rem;
+    /* background-image: url("./img/cdmx.jpg"); */
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 20rem;
+    height:calc(20rem*1.5);
+    border: 4px solid white;
+    padding:4px;
+}
+.miamiPic{
+    /* background-image: url("./img/plate2.jpg"); */
+    background-size:cover;
+    width: 20rem;
+    height:calc(20rem*1.5);
+    border: 4px solid white;
+    padding:4px;
+}
+
+p{
+    width: 80ch;
+    color: rgb(19, 19, 19);
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 1.1rem;
+}
+
+.header{
+    height: 1px;
+    width: 70%;
+    background-color:rgb(255, 255, 251);
+    box-shadow: 6px 6px 35px rgb(58, 56, 56);
+    position: relative;
+    top: 110px;
+    border: 1px solid white;
+    border-radius: 90px;
+    z-index: 100;
+}
+
+#content{
+    margin-top: -1rem;
+    width: 70%;
+    height: 2000px;
+    position: relative;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+    z-index: 90;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    background-image: url('./img/bedge-grunge.png');    
+}
+
+.buttonsDiv{
+    
+    width: 100%;
+    display: flex;
+    gap:10rem;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+    position: relative;
+    top: 3rem;
+}
+
+.menu,
+.home,
+.contactUs{
+    height: 20px;
+    width: 12rem;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1.6rem;
+    font-family: "Montserrat";
+}
+
+.aboutUsDiv{
+    margin-top:2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2rem;
+}
+
+.pictureDiv{
+   
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo{ 
+    height: 8rem;
+    width: 8rem;
+    z-index: 100;
+    position: absolute;
+    left: 4.2rem;
+}
+
+button:hover{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.picAndQuote{
+    margin-top:2rem;
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(
+    './img/foodQuotePic.jpg');
+    /* background-image: url("./img/foodQuotePic.jpg"); */
+    height: 40rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 10%;
+    margin-bottom: 2rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 8px -8px black;
+
+    
+}
+
+.quote{
+    color:white;
+    font-family: "Montserrat";
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.quote::after{
+    content:"-Some guy who was just being Honest"
+}
+
+.quote:after{
+    position:absolute;
+    font-size: 1.4rem;
+    top: 22rem;
+    right: 11rem;
+}
+
+.storeInfo{
+    width: 100%;
+    height:30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.address{
+    white-space: pre;
+    text-decoration: underline;
+    margin-left: 7rem;
+    line-height: 1.5rem;
+}
+
+.hoursAndLocation{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:50%;
+    gap: 2rem;
+}
+
+.hours{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    white-space: pre;
+    gap:2rem;
+    
+}
+
+.infoTitle{
+    white-space: pre;
+    text-align: center;
+    margin-left: 7rem;
+    
+}
+
+.weekdays,
+.weekdayHours,
+.sundays,
+.sundayHours{
+    margin-right: 7rem;
+    font-family: "Montserrat";
+    color: #485b70;
+
+}
+
+.footer{
+    width: 100vw;
+    height: 2rem;
+    background-color: rgb(22, 22, 22);
+    /* background-image: url("./img/footer.jpg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y:  40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Montserrat";
+    font-size: 1rem;
+    margin-top: auto;
+}
+
+.currentPage::before{
+    content: "\f219";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: .8rem;
+    position: relative;
+    right: .5rem;
+    bottom: .1rem;
+    color: rgb(255, 255, 255);
+}
+
+.currentPage::after{
+    content: "\f219";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: .8rem;
+    position: relative;
+    left: .5rem;
+    bottom: .1rem;
+    color: rgb(255, 255, 255);
+}
+
+.headerDiv{
+    background-image: url("./img/woodBG.jpg");
+    box-shadow: 8px 8px 20px black;
+    position: absolute;
+    height: 8rem;
+    width: 100%;
+    z-index: 99;
+}
+
+.hovered{
+    opacity: .5;
+}
+
+.menuPicHeader{
+    position: absolute;
+    top: 29rem;
+    left: -28rem;
+    font-size: 2rem;
+    color: #485b70;
+}
+
+.contactPicHeader{
+    color: #485b70;
+    position: absolute;
+    top: 29rem;
+    right: -28rem;
+    font-size: 2rem;
+}
+
+.currentPage:hover:before,
+.currentPage:hover::after{
+    color: rgb(255, 255, 255);
+}
+
+.menuPageTitle{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.appetizerDiv,
+.drinksDiv,
+.foodDiv{
+    border: 7px solid white;
+    height: max-content;
+    width: 10rem;
+    width: 40rem;
+    border-top-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.foodDiv{
+    border: 7px solid white;
+    border-top-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+    display: flex;
+    width: 40rem;
+    height: max-content;
+    padding-bottom: .5rem;
+}
+
+.drinksDiv{
+    margin-bottom: 2rem;
+    /* width: max-content; */
+    padding-bottom: .5rem;
+}
+
+h3{
+    color: rgb(143 112 91);
+    font-family: "Courgette";
+    margin-left: 3rem;
+    margin-top: 1rem;
+}
+
+.appetizerTitle,
+.drinksTitle{
+    position: relative;
+    /* right: 16rem; */
+    letter-spacing: .2rem;
+    margin-left: 0px;
+    font-size: 2rem;
+}
+
+.Shumai{
+    margin-bottom: .5rem;
+}
+
+.SakeCocktail,
+.Shumai,
+.Gyozas,
+.Edamame,
+.drinks{
+    margin-top: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.appDescription{
+    font-weight: 100;
+    width: 45ch;
+    text-align: left;
+}
+
+.appetizerNameTitle{
+    position: relative;
+  
+    width: fit-content;
+}
