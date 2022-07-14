@@ -228,6 +228,12 @@ button:hover{
     line-height: 1.5rem;
 }
 
+.addressCP{
+    white-space: pre;
+    text-decoration: underline;
+    line-height: 1.5rem;
+}
+
 .hoursAndLocation{
     
     display: flex;
@@ -235,6 +241,13 @@ button:hover{
     align-items: center;
     width:50%;
     gap: 2rem;
+}
+
+.hoursAndLocationContactPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min-content;
 }
 
 .hours{
@@ -251,7 +264,13 @@ button:hover{
     white-space: pre;
     text-align: center;
     margin-left: 7rem;
-    
+}
+
+.infoTitleCP{
+    white-space: pre;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .weekdays,
@@ -337,7 +356,8 @@ button:hover{
     color: rgb(255, 255, 255);
 }
 
-.menuPageTitle{
+.menuPageTitle,
+.contactUsTitle{
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -419,6 +439,17 @@ h3{
 
 .appetizerNameTitle{
     position: relative;
-  
+    font-weight: bold;
     width: fit-content;
+    font-size: 1.2rem;
+}
+
+.storeInfoContactPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 7px solid white;
+    width: 45rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
 }

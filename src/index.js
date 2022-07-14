@@ -1,6 +1,7 @@
 import css from "./style.css";
 import pageLoad from "./load.js";
 import menuLoad from "./menu";
+import loadContactUs from "./contactUs";
 import logo from "./img/logo.png"
 
 
@@ -72,8 +73,7 @@ homeButton.addEventListener("click", ()=>{
     }
     contactUsButton.classList.add("currentPage")
     contentDiv.replaceChildren();
-    contentDiv.classList.add("contactUs")
-    //  pageLoad()
+     loadContactUs()
  })
 
 pageLoad()
